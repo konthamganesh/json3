@@ -5,7 +5,7 @@ pipeline {
         stage('{"name":"John", "age":30, "car":null}'
 ) {
             steps {
-                echo 'john'
+                echo 'john,30'
             }
         }
     }
