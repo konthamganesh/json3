@@ -2,9 +2,10 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage(''{"name":"John", "age":30, "car":null}'
+') {
             steps {
-                echo 'Hello World'
+                echo 'john'
             }
         }
     }
