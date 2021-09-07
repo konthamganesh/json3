@@ -1,1 +1,3 @@
-'{"name":"John", "age":30, "car":null}'
+def data = readJSON text: '{}'
+data.a = "test: ${myVar}"
+writeJSON(file: 'message1.json', json: data, pretty: 4)
