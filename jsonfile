@@ -1,10 +1,7 @@
 import groovy.json.JsonSlurper
 
-// Example Response Data
 def restResponse = '[{ "name":"Bob"},{"age":30},{"car":null}]'
 
-// Parse the response
 def list = new JsonSlurper().parseText( restResponse )
 
-// Print them out to make sure
 list.each { println it }
