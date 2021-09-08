@@ -1,4 +1,4 @@
 def props = readJSON file: 'dir/input.json'
 def props = readJSON text: '{ "key": "value" }'
 assert props['key'] == 'value'
-assert props.key == 'value'
+
