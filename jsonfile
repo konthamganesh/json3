@@ -1,7 +1,7 @@
 import groovy.json.JsonSlurper
-{"model number": "RX234",
- "customers": ["Adam", "Paul"],
- "price": 45000,
- “quantity”: 12,
- “company”: “Samsung”
-}
+
+def restResponse = '[{ "name":"Bob"},{"age":30},{"car":null}]'
+
+def list = new JsonSlurper().parseText( restResponse )
+
+list.each { println it }
